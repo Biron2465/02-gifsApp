@@ -2,36 +2,11 @@
 <div class="d-flex">
 
   <!-- Este es el sidebar -->
-  <div class="bg-dark border-right p-3" id="sidebar">
-    <h3 class="text-light">
-      Gifs-App
-    </h3>
-    <hr class="text-white">
-    <div class="list-group list-reset">
-      <a href="#" class="list-group-item list-group-item-action">
-        Dashboard
-      </a>
-    </div>
-  </div>
+    <app-sidebar></app-sidebar>
   <!-- Aqui termina el sidebar -->
 
-  <div class="container">
-    <div class="row p-3">
-      <div class="col">
-        <h5>
-          Buscar:
-        </h5>
-        <input type="text" class="form-control" placeholder="Buscar gifs...">
-      </div>
-    </div>
-    <hr>
-
-    <div class="row">
-      <div class="col">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet rem sed asperiores inventore, magnam sapiente ratione voluptates dicta dignissimos, deserunt enim quas fugit blanditiis qui laboriosam aliquid quam minus.
-      </div>
-    </div>
-
-  </div>
-
+  <!-- Aqui se llama al gifs page -->
+  <app-gifs-page class="container"></app-gifs-page>
+  <!-- Aqui termina el llamado al gif page -->
+  
 </div>
