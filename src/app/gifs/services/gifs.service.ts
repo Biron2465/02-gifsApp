@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { SearchGifsResponse, Gif } from '../interface/gifs.interface';
-import { jsDocComment } from '@angular/compiler';
+
 
 @Injectable({
   providedIn: 'root'
@@ -49,6 +49,6 @@ export class GifsService {
       .subscribe((resp) =>{
         this.resultados= resp.data;
         localStorage.setItem('resultados', JSON.stringify(this.resultados));
-      })
+    })
   }
 }
